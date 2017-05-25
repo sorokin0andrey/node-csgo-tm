@@ -1,0 +1,24 @@
+{
+  "name": "csgo-tm",
+  "version": "1.0.0",
+  "dependencies": {
+    "request": "^2.79.0",
+    "apiqueue": "^1.0.0",
+    "uws": "^0.14.5"
+  },
+  "description": "API library for csgo.tm market",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sorokin0andrey/node-csgo-tm.git"
+  },
+  "author": "Andrey Sorokin <sorokin0andrey@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sorokin0andrey/node-csgo-tm/issues"
+  },
+  "homepage": "https://github.com/sorokin0andrey/node-csgo-tm#readme"
+}
