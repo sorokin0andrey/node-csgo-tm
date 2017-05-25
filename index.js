@@ -25,6 +25,18 @@ class CSGOTM {
 				};
 				self.q.addTask(f);
 			},
+			SetPrice: function(item, price, callback = empty) {
+				let f = function () {
+					request('https://market.csgo.com/api/setPrice/' + item + '/' + price + '/?key=' + self.apikey, function (err, response, body) {
+						if (err) return callback(err);
+						if (response.statusCode != 200) return callback(response.statusCode);
+						let data = JSON.parse(body);
+						if (data.error) return callback(data.error);
+						callback(null, data);
+					})
+				};
+				self.q.addTask(f);
+			},
 			url: {
 				base: 'https://market.csgo.com/api/',
 				build (method) {
